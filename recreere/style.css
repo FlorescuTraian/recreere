@@ -1,0 +1,361 @@
+*{
+		margin: 0;
+		padding: 0;
+}
+#banner{
+	background: linear-gradient(rgba(0,0,0,0.1),#3F5679),url(images/backgr.jpg);
+	background-size: cover;
+	background-position:center;
+	height: 100vh;
+}
+.banner-text{
+	text-align: center;
+	color: #fff ;
+	padding-top: 180px;
+
+}
+.banner-text h1{
+	font-size: 130px;
+	font-family: "Papyrus", fantasy;
+}	
+.banner-text p{
+	font-size: 40px;
+	font-family: "Papyrus" , fantasy;
+}
+.banner-btn{
+	margin: 85px auto 0;
+
+}
+.banner-btn a{
+	width: 200px;
+	text-decoration: solid;
+	display: inline-block;
+	margin: 0 20px;
+	padding: 15 0;
+	color:  #fff;
+	border:  .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+}
+.banner-btn a span{
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover {
+	color: #000;
+}
+#sideNav{
+	width: 200px;
+	height: 100vh;
+	position: fixed;
+	right: -200px;
+	top: 0;
+	background:#3F5679;
+	z-index: 2;
+	transition: 0.5s;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 50px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+#menuBtn{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+#menuBtn img{
+	width: 20px;
+	margin: 15px;
+}
+#Mall{
+	width: 100%;
+	padding: 70px 0;
+	background:#3F5679 ;
+
+}
+.title-text{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.title-text p{
+	margin: auto;
+	font-size: 100px;
+	color: #fff;
+	font-family: "Papyrus", fantasy;
+	font-weight: bold;
+	}
+.title-text h1{
+	margin: auto;
+	font-size: 50;
+	color: #fff;
+	font-family: "Papyrus", fantasy;
+	font-weight: bold;
+
+}	
+.title-text h2{
+	margin: auto;
+	font-size: 30px;
+	color: #fff;
+	font-family: "Papyrus", fantasy;
+	font-weight: bold;
+}
+.About-box-iulius{
+	width: 70%;
+	margin: auto;
+	display: flex;
+	position: relative;
+	padding-top: 50px;
+	text-align:left;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "Papyrus", fantasy;
+	color: #fff;
+	margin-left: 150px;
+
+}
+
+.About{
+	flex-basis: 50%;
+}
+
+.About-img{
+	flex-basis: 40%;
+	margin-left: 200px;
+}
+.About-img img{
+	
+	border-radius: 40px;
+	margin-right: -150px;
+
+}
+
+.About-icon{
+	margin: auto;
+	position: relative;
+	left: 10px;
+}
+#Viata{
+	width: 100%;
+	padding: 70px 0;
+	background:#3F5679 ;
+}
+
+.Viata-box{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}	
+#Activitati{
+	width: 100%;
+	padding: 70px 0;
+	background:#3F5679 ;
+}
+
+.Activitati-box{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+.proiect1{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	position: relative;
+
+}
+.proiect1 img{
+	width: 100%;
+	border-radius: 10px;
+
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	background:linear-gradient(rgba(0,0,0,0.5),#3F5679) ;
+	opacity: 0;
+	transition: 1s;
+
+}
+.proiect1:hover .overlay{
+	opacity: 1;
+}
+.proiect1-desc{
+	width: 80%;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	opacity: 0;
+	transform: translateX(-50%);
+	transition: 1s;
+}
+.github:visited, link{
+	color: white;
+}
+
+
+
+hr{
+	background: #fff;
+	height: 2px;
+	border: 0;
+	margin: 15px auto;
+	width: 60%;
+}
+.proiect1-desc p{
+	font-size: 20px;
+}
+.proiect1:hover .proiect1-desc{
+	bottom: 50%;
+	opacity: 1;
+
+}
+.proiect1-desc h4{
+	position: relative;	
+	top: 40px;
+	font-size: 20px;
+
+}
+#Contact{
+	width: 100%;
+	padding: 70px 0;
+	background:#3F5679 ;
+	height: 900px;
+}
+.contact-form{
+	height: 700px;
+	margin: 20px auto;
+	width: 450px;
+	float: left;
+	padding-left: 350px;
+	font-size: 30px;
+	color: #EA470F;
+	font-weight: bold;
+	font-family: "Papyrus", fantasy;
+}
+
+.About-icon1{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 20px;
+	height: 700px;
+	float: left;
+	width: 300px;
+	padding: 0px;
+
+}
+
+.About-icon1 #iconita{
+	color: white;
+}
+
+.About-icon1 h5{
+	font-size: 30px;
+	color: #EA470F;
+	font-weight: bold;
+	font-family: "Papyrus", fantasy;
+	margin: auto;
+}
+.About-icon1 p{
+	font-size: 30px;
+	color: #fff;
+	font-family: "Papyrus", fantasy;
+	margin: auto;
+
+}
+
+.social-links{
+	text-align: center;
+	position: relative;
+	right: 35%;
+	bottom: 10%;
+}
+.social-links .fa{
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	border: 1px solid #fff;
+	margin: 40px 5px 0;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.social-links .fa:hover{
+	background: #fff;
+	color: #EA470F;
+	transform: translateY(-7px);
+
+}
+
+.contact-page{
+	width: 1100px;
+	height: 500px;
+}
+
+#fname {
+	height: 50px;
+	width: 300px;
+}
+
+#lname{
+	height: 50px;
+	width: 300px;
+}
+
+#contact-message{
+	height: 90px;
+	width: 300px;
+}
+#submit{
+	height: 40px;
+	width: 80px;
+	position: relative;
+	left: 100px;
+	color: #EA470F;
+	font-family: "Papyrus", fantasy;
+	font-weight: bold;
+	border-radius: 5px;
+	border-color: #EA470F;
+
+
+}
+.dl{
+	margin-top: 50px;
+    color: white;
+    transition: color 0.6s;
+    text-decoration: none; 
+
+}
+.dl:hover{
+	color: rgb(44, 46, 46);
+}
